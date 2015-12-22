@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fatto</string>
+    <string name="server_client_id">929483825773-i0k6bdte8sqc1dbcfnl2q03lvpcsbtrs.apps.googleusercontent.com</string>
+    <string name="signed_in_fmt">Usuario: %s</string>
+    <string name="signed_in_fmt2">Correo: %s</string>
+    <string name="ID_APP">160604707633581</string>
+</resources>
