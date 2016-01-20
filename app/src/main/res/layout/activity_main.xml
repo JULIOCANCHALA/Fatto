@@ -8,8 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.canchala.julio.practica7.MainActivity"
-    android:background="@drawable/fondo2"
+    tools:context=".Main"
+    android:background="@drawable/fondo4"
     android:orientation="vertical"
     >
 
@@ -25,8 +25,8 @@
         android:layout_height="wrap_content"
         android:src="@drawable/logopeque"
         android:layout_weight="1"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
         />
 
     <LinearLayout
@@ -36,24 +36,23 @@
         >
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/color1"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="5dp"
             android:text="Inicia Sesion"
             android:textColor="@color/color2"
             android:textSize="18sp"
             android:id="@+id/buttoninicio"
-
             />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/color1"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:text="Regístrate"
             android:textColor="@color/color2"
             android:textSize="18sp"

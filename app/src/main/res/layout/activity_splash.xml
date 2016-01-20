@@ -5,13 +5,27 @@
     android:layout_height="match_parent"
     tools:context="com.canchala.julio.practica7.SplashActivity"
     android:background="@color/color2"
+    android:orientation="vertical"
     >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/candado"
-        android:padding="80dp"
+        android:padding="75dp"
+        android:layout_weight="0.1"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:text="UdeA"
+        android:gravity="center"
+        android:textColor="@color/color4"
+        android:textSize="40sp"
+
         />
 
 </LinearLayout>

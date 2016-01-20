@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.canchala.julio.practica7.Info">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vector3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="172dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHeaderTexts"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="User"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/color5"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textViewUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Email"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/color5"
+                        android:textSize="17sp"
+                        />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/image2"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logingoogle" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:layout_above="@+id/linearLayoutHeaderTexts"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/candado" />
+
+            </RelativeLayout>
+
+</FrameLayout>

@@ -5,55 +5,33 @@
     android:layout_height="match_parent"
     tools:context="com.canchala.julio.practica7.Registro"
     android:orientation="vertical"
+    android:background="@drawable/vector2"
     >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/color3"
-        android:textSize="28dp"
+        android:background="@color/colorPrimary"
+        android:textSize="25dp"
         android:text="Inicia Sesion"
         android:textColor="@color/color2"
         android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
         />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:orientation="horizontal"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            >
-
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@drawable/loginface"
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            >
 
             <Button
                 android:id="@+id/id_sign_in_button"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@drawable/logingoogle"
+                android:layout_gravity="center"
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                android:background="@drawable/logingoogle2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 />
-
-        </LinearLayout>
-    </LinearLayout>
 
 
     <LinearLayout
@@ -61,18 +39,33 @@
         android:layout_height="70dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Usuario:"
-            android:textSize="18dp"
-            android:layout_weight="1"
-            />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_usuario"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario:"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,18 +80,33 @@
         android:layout_height="70dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Contraseña:"
-            android:textSize="18dp"
-            android:layout_weight="1"
-            />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_contra"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña:"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,12 +119,13 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:background="@color/color1"
+        android:background="@color/color7"
         android:text="Entrar"
         android:textColor="@color/color2"
         android:textSize="18sp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+
         android:id="@+id/inientrar"
         />
 

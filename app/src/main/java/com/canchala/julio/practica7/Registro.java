@@ -1,6 +1,7 @@
 package com.canchala.julio.practica7;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,8 @@ public class Registro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         setContentView(R.layout.activity_registro);
 
@@ -64,7 +67,7 @@ public class Registro extends AppCompatActivity {
                             correo.setText("");
                             contra.setText("");
 
-                            Intent intent=new Intent(getApplicationContext(),Muestra.class);
+                            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
 
                             intent.putExtra("nombre", "Usuario: "+nom);
                             intent.putExtra("email", "Correo: "+corr);

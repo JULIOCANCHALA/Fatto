@@ -4,4 +4,21 @@
     <string name="signed_in_fmt">Usuario: %s</string>
     <string name="signed_in_fmt2">Correo: %s</string>
     <string name="ID_APP">160604707633581</string>
+
+    <string-array name="Tags">
+        <item>Alarmas</item>
+        <item>Retos</item>
+        <item>Contactos</item>
+        <item>Ajustes</item>
+        <item>Información</item>
+    </string-array>
+
+    <string name="drawer_open">Abrir navigation drawer</string>
+    <string name="drawer_close">Cerrar navigation drawer</string>
+    <string name="headlines">Encabezados de</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

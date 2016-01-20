@@ -1,14 +1,13 @@
 package com.canchala.julio.practica7;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
-import android.util.Base64;
 import android.widget.Toast;
 
 
@@ -23,8 +22,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import java.io.UnsupportedEncodingException;
-
 public class InicioSesion extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener,View.OnClickListener {
 
     private Firebase mRef;
@@ -34,7 +31,7 @@ public class InicioSesion extends AppCompatActivity implements GoogleApiClient.O
     String snom;
     String scont;
 
-    private static final String TAG="MainActivity";
+    private static final String TAG="Main";
     private static final int RC_SIGN_IN=9001;
     private GoogleApiClient mGoogleApiClient;
     private String mStatusUser;
@@ -46,6 +43,8 @@ public class InicioSesion extends AppCompatActivity implements GoogleApiClient.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         setContentView(R.layout.activity_inicio_sesion);
 
@@ -86,9 +85,9 @@ public class InicioSesion extends AppCompatActivity implements GoogleApiClient.O
                             inuser newinuser = postSnapshot.getValue(inuser.class);
 
                             if(newinuser.getNombre().toString().equals(snom) && newinuser.getContrase().toString().equals(scont)){
-                                Intent intent=new Intent(getApplicationContext(),Muestra.class);
+                                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
 
-                                intent.putExtra("nombre", "Usuario: "+newinuser.getNombre());
+                                intent.putExtra("nombre","Usuario: "+newinuser.getNombre());
                                 intent.putExtra("email","Correo: "+newinuser.getCorreo());
 
                                 startActivity(intent);
@@ -164,7 +163,13 @@ public class InicioSesion extends AppCompatActivity implements GoogleApiClient.O
         if(signedIn){
             Toast.makeText(InicioSesion.this, "Ahora eres parte de Fatto", Toast.LENGTH_LONG).show();
 
-            Intent intent=new Intent(getApplicationContext(),Muestra.class);
+            Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+
+            Firebase usuarios=mRef.child("Usuarios").child(mStatusUser);
+
+            user nuevo=new user(mStatusUser,mStatusEmail,"*");
+
+            usuarios.setValue(nuevo);
 
             intent.putExtra("nombre",mStatusUser);
             intent.putExtra("email",mStatusEmail);

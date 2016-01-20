@@ -6,7 +6,14 @@
     <color name="color1">#FF00ADAD</color>
     <color name="color2">#FFFFFF</color>
     <color name="color3">#1198BA</color>
-    <color name="color4">#EAEAEA</color>
+    <color name="color4">#cccccc</color>
     <color name="color5">#434343</color>
+    <color name="color6">#A7A7A7</color>
+    <color name="color7">#D22D21</color>
+    <color name="color8">#ff3333</color>
+
+
+
+
 
 </resources>

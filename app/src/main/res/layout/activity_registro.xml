@@ -5,16 +5,20 @@
     android:layout_height="match_parent"
     tools:context="com.canchala.julio.practica7.Registro"
     android:orientation="vertical"
+    android:background="@drawable/vector"
     >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/color3"
-        android:textSize="28dp"
+        android:background="@color/colorPrimary"
+        android:textSize="25dp"
         android:text="Regístrate"
         android:textColor="@color/color2"
         android:gravity="center"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
         />
 
     <LinearLayout
@@ -22,18 +26,35 @@
         android:layout_height="70dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Usuario:"
-            android:textSize="18dp"
-            android:layout_weight="1"
-            />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_usuario"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario:"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,18 +69,34 @@
         android:layout_height="70dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Correo Electronico:"
-            android:textSize="18dp"
-            android:layout_weight="1"
-            />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_email"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo Electronico:"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,18 +112,33 @@
         android:layout_height="70dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Contraseña:"
-            android:textSize="18dp"
-            android:layout_weight="1"
-            />
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_contra"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña:"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                />
+
+        </LinearLayout>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,7 +151,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:background="@color/color1"
+        android:background="@color/color7"
         android:text="Registrarme"
         android:textColor="@color/color2"
         android:textSize="18sp"
