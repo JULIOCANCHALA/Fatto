@@ -49,9 +49,9 @@ public class Registro extends AppCompatActivity {
                 corr=correo.getText().toString();
                 cont=contra.getText().toString();
 
-                Firebase usuarios=mRef.child("Usuarios").child(nom);
+                Firebase usuarios=mRef.child("Usuarios").child("Usuario: "+nom);
 
-                user nuevo=new user(nom,corr,cont);
+                user nuevo=new user("Usuario: "+nom,"Correo: "+corr,cont);
 
                 usuarios.setValue(nuevo, new Firebase.CompletionListener() {
                     @Override
@@ -69,8 +69,8 @@ public class Registro extends AppCompatActivity {
 
                             Intent intent=new Intent(getApplicationContext(),MainActivity.class);
 
-                            intent.putExtra("nombre", "Usuario: "+nom);
-                            intent.putExtra("email", "Correo: "+corr);
+                            intent.putExtra("nombre",nom);
+                            intent.putExtra("email",corr);
 
                             startActivity(intent);
 

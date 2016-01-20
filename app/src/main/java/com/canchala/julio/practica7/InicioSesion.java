@@ -84,11 +84,11 @@ public class InicioSesion extends AppCompatActivity implements GoogleApiClient.O
 
                             inuser newinuser = postSnapshot.getValue(inuser.class);
 
-                            if(newinuser.getNombre().toString().equals(snom) && newinuser.getContrase().toString().equals(scont)){
+                            if(newinuser.getNombre().toString().equals("Usuario: "+snom) && newinuser.getContrase().toString().equals(scont)){
                                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
 
-                                intent.putExtra("nombre","Usuario: "+newinuser.getNombre());
-                                intent.putExtra("email","Correo: "+newinuser.getCorreo());
+                                intent.putExtra("nombre",newinuser.getNombre());
+                                intent.putExtra("email",newinuser.getCorreo());
 
                                 startActivity(intent);
                             }
